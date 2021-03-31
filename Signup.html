@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <title>Bootstrap 5</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <body style="background-color: slategray">
+        <h1 style="text-align: center">Sign up</h1>
+    
+        <div id="content">
+          <img
+            src="Images/film1.jpg"
+            style="
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              width: 7.5%;
+              border: silver;
+              border-style: solid;
+            "
+          />
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" >Sign up</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="Index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"
+                    href="Signup.html"
+                    >Sign up</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="About us.html">About us</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="Locations.html">Locations</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    
+
+        <center>
+      <img
+        src="Images/film1.jpg"
+        alt="image"
+        style="width: 400px; padding-top: 10px; padding-bottom: 30px;"
+      />
+        </center>
+
+        <div class=form1>
+        <form method="get" action="index.html">
+          <h3>Your Details</h3>
+          <fieldset>
+            <legend style="padding-bottom: 15px;"></legend>
+            <!--0-->
+            <div class="container">
+              <div class="row">
+            <label class= "col-form-label col-sm-3 .offset-sm-3" for="Title" ><B>Title</B></label>
+            <div class = "col-sm-7">
+            <select class="form-control" id="Title" Title="Title">
+              <option value="enter" selected>Please select</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              </select><br>
+            </div>
+            </div>
+            </div>
+              <!--bootstrap-->
+              <div class="container">
+                <div class="row">
+                <label class= "col-form-label col-sm-3 .offset-sm-3" for="name"><B>Name</B></label>
+                <div class = "col-sm-7">
+                  <input class="form-control" id="name" type="text" placeholder="Enter Name";><br>
+                </div>
+              </div>
+              </div>
+            <!--2-->
+            <div class="container">
+              <div class="row">
+                  <label class = "col-form-label col-sm-3 .offset-sm-3" for="surname" ><b>Surname</b></label>
+                <div class = "col-sm-7">
+                  <input class="form-control" id="surname" type="text" placeholder="Enter Surnname";><br>
+                </div>
+              </div>
+              </div>
+            <!--3-->
+            <div class="container">
+              <div class="row">
+            <label class = "col-form-label col-sm-3 .offset-sm-3" for="Email" ><b>Email</b></label>
+            <div class = "col-sm-7">
+            <input class="form-control" id="Email" type="Email" placeholder="Enter Email";><br>
+              </div>
+          </div>
+          </div>
+            <!--4-->
+            <div class="container">
+              <div class="row">
+                <label class = "col-form-label col-sm-3 .offset-sm-3" for="DOB"><b>Date of Birth</b></label>
+                <div class = "col-sm-7">
+            <input class = "form-control" id="DOB" type="date" placeholder="Select DOB";><br>
+          </div>
+        </div>
+        </div>
+            <!--5-->
+            <div class="container">
+              <div class="row">
+            <label class = "col-form-label col-sm-3 .offset-sm-3" for="Phone_number"><b>Phone Number</b></label>
+            <div class = "col-sm-7">
+            <input class = "form-control" id="Phone_number" type="tel" placeholder="Enter Number"; pattern="[0-9]{11};"><br>
+          </div>
+          </div>
+          </div>
+          <!--6-->
+          <div class="container">
+            <div class="row">
+            <label class = "col-form-label col-sm-3 .offset-sm-3" ><b>Gender</b></label>
+          <div class ="col-sm-7">
+          <input type="radio" id="m_gender" value="m_gender" name="gender" ><label class="radio-input2" for="m_gender">Male</label>
+          <input type="radio" id="f_gender" value="f_gender" name="gender" ><label class="radio-input2" for="f_gender">Female</label>
+          <input type="radio" id="o_gender" value="o_gender" name="gender" ><label class="radio-input2" for="o_gender">Other</label>
+        </div>
+        </div>
+        </div>
+        <br>
+            <center>
+              <div class="button1">
+                <button type="submit" class="btn btn-secondary" style="margin-right: 20px;">Submit</button>
+                <button type="reset" class="btn btn-warning">Clear</button>
+              </div>
+              <div class="button2">
+
+              </div><br>
+            </center>
+          </div>
+
+    <hr>
+        <footer>
+          <p>Created by Alex Nung</p>
+        </footer>
+    
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+          crossorigin="anonymous"
+        ></script>
+  </body>
+</html>
